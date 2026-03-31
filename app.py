@@ -174,6 +174,10 @@ def track():
         "page":       request.json.get("page", "/"),
         "product_id": request.json.get("product_id"),
         "user_id":    request.json.get("user_id", "anonymous"),
+        "session_id": request.json.get("session_id"),
+        "deviceType": request.json.get("deviceType"),
+        "browser": request.json.get("browser"),
+        "os": request.json.get("os"),
         "timestamp":  datetime.now(timezone.utc).isoformat(),
     }
 
